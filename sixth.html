@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>zhuce</h1>
+<!--表单
+action:表达你提交的地址，可以是网站也可以是请求处理地址
+method：get post
+        get在url中看到提交的信息，不安全、高效
+        post比较安全，传输大文件
+-->
+<form action="first.html" method="get">
+<!--文本输入框-->
+    <p>名字: <input type="text" name="name"></p>
+    <p>名字: <input type="password" name="pwd"></p>
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+    <p>
+    <!--单选框-->
+    <input type="radio" value = "boy" name="sex">nan
+    </p>
+    <p>
+        <!--多选框-->
+        <input type="checkbox" value = "1" name="sex">1
+        <input type="checkbox" value = "2" name="sex">2
+        <input type="checkbox" value = "3" name="sex">3
+    </p>
+    <p>
+        <!--按钮-->
+        <input type="button" name="bt" value="dianji">
+        <input type="image" src="1.jpg" width="50" height="50">
+    </p>
+    <p>
+<!--下拉列表-->
+        <select name="list">
+            <option value="opt" selected>中国</option>
+            <option value="opt">美国</option>
+        </select>
+    </p>
+    <p>feedback: <br>
+        <label title="feed">
+            <textarea name="area" cols="50" rows="10"></textarea>
+        </label>
+    </p>
+    <p>
+        <input type="file" src="1.jpg" name="files">
+        <input type="button" value="upload">
+    </p>
+    <p>
+    <!--邮件验证-->
+        mail:
+        <input type="email" name="mail">
+    <!-- url-->
+        urls:
+        <input type="url" name="url">
+        数字：
+        <input type="number" name="num" step="3" min="0" max="9">
+
+    </p>
+    <p>
+        <!--滑块验证-->
+        滑块：
+        <input type="range" min="0" max="100">
+        搜索：
+        <input type="search" name="search">
+
+    </p>
+</form>
+</body>
+</html>
