@@ -14,8 +14,8 @@ method：get post
 -->
 <form action="first.html" method="get">
 <!--文本输入框-->
-    <p>名字: <input type="text" name="name"></p>
-    <p>名字: <input type="password" name="pwd"></p>
+    <p>名字: <input type="text" name="name" placeholder="enter your name"></p>
+    <p>密码: <input type="password" name="pwd" required></p>
     <p>
         <input type="submit">
         <input type="reset">
@@ -67,8 +67,16 @@ method：get post
         滑块：
         <input type="range" min="0" max="100">
         搜索：
-        <input type="search" name="search">
-
+        <input type="search" name="search" id="mark">
+    </p>
+    <p>
+        <label for="mark">你点我试试</label>
+        <input type="text">
+    </p>
+    <p>
+        自定义邮箱:
+        <input type="email" pattern="/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+">
     </p>
 </form>
 </body>
